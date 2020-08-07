@@ -1,4 +1,4 @@
-#include "common/renderarea.h"
+#include "renderarea.h"
 #include <queue>
 #include <QTimer>
 
@@ -84,7 +84,7 @@ void RenderArea::drawNodes(QPainter &painter)
     painter.save();
     painter.setRenderHint(QPainter::Antialiasing);
     painter.setPen(Qt::black);
-    painter.setBrush(QBrush(Qt::black));
+    painter.setBrush(QBrush(Qt::cyan));
     Vector2f pos;
     for(int i = 0; i < (int)rrt->nodes.size(); i++) {
         for(int j = 0; j < (int)rrt->nodes[i]->children.size(); j++) {

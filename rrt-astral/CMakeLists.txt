@@ -47,7 +47,7 @@ add_library(qt_lib ${QT_SOURCES} ${QT_FORMS_HPP} ${QT_MOC_HPP})
 target_link_libraries(qt_lib ${QT_LIBRARIES})
 
 add_library(obstacles_lib include/common/obstacles.h src/obstacles.cpp)
-add_library(renderarea_lib include/common/renderarea.h src/renderarea.cpp)
+add_library(renderarea_lib include/renderarea.h src/renderarea.cpp)
 add_library(rrt_lib include/rrt/rrt.h src/rrt.cpp)
 
 add_executable(rrt-test src/main.cpp)

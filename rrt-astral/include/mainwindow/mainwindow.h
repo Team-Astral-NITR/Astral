@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "common/renderarea.h"
+#include "renderarea.h"
 #include "rrt/rrt.h"
 
 namespace Ui {
