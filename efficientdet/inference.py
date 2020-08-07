@@ -54,6 +54,8 @@ coco_id_mapping = {
 }  # pyformat: disable
 
 
+
+
 def image_preprocess(image, image_size: Union[int, Tuple[int, int]]):
   """Preprocess image for inference.
 
@@ -300,6 +302,17 @@ def visualize_image(image,
   id_mapping = parse_label_id_mapping(id_mapping)
   category_index = {k: {'id': k, 'name': id_mapping[k]} for k in id_mapping}
   img = np.array(image)
+
+#changes
+  indices = np.argwhere((classes ==31) | (classes==33) | (classes==44) |
+  (classes==47) | (classes==48) | (classes==49) | (classes==50) | (classes==51)
+  | (classes==74)| (classes==75)| (classes==77)| (classes==84)| (classes==86)
+  | (classes==87)| (classes==88)| (classes==89)| (classes==90))
+  boxes = np.squeeze(boxes[indices], axis=1) # to prevent errors made by nd.array of size 1 nd.array
+  scores = np.squeeze(scores[indices], axis=1)
+  classes = np.squeeze(classes[indices], axis=1)
+#ends
+
   vis_utils.visualize_boxes_and_labels_on_image_array(
       img,
       boxes,
@@ -511,6 +524,7 @@ class ServingDriver(object):
     return visualize_image_prediction(
         image,
         prediction,
+        #label_id_mapping=self.label_id_mapping,
         label_id_mapping=self.label_id_mapping,
         **kwargs)
 
