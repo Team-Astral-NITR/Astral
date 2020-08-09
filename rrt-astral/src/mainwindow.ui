@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1048</width>
+    <width>1296</width>
     <height>666</height>
    </rect>
   </property>
@@ -19,7 +19,7 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>920</width>
+      <width>1181</width>
       <height>920</height>
      </rect>
     </property>
@@ -27,8 +27,8 @@
    <widget class="QPushButton" name="startButton">
     <property name="geometry">
      <rect>
-      <x>930</x>
-      <y>91</y>
+      <x>1190</x>
+      <y>101</y>
       <width>99</width>
       <height>30</height>
      </rect>
@@ -40,8 +40,8 @@
    <widget class="QPushButton" name="resetButton">
     <property name="geometry">
      <rect>
-      <x>930</x>
-      <y>121</y>
+      <x>1190</x>
+      <y>131</y>
       <width>99</width>
       <height>27</height>
      </rect>
@@ -53,8 +53,8 @@
    <widget class="QTextBrowser" name="textBrowser">
     <property name="geometry">
      <rect>
-      <x>930</x>
-      <y>391</y>
+      <x>1190</x>
+      <y>401</y>
       <width>100</width>
       <height>100</height>
      </rect>
@@ -70,8 +70,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="stepSizeLabel">
     <property name="geometry">
      <rect>
-      <x>930</x>
-      <y>171</y>
+      <x>1190</x>
+      <y>181</y>
       <width>100</width>
       <height>17</height>
      </rect>
@@ -86,8 +86,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLineEdit" name="stepSize">
     <property name="geometry">
      <rect>
-      <x>930</x>
-      <y>191</y>
+      <x>1190</x>
+      <y>201</y>
       <width>100</width>
       <height>27</height>
      </rect>
@@ -102,8 +102,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>930</x>
-      <y>231</y>
+      <x>1190</x>
+      <y>241</y>
       <width>100</width>
       <height>17</height>
      </rect>
@@ -118,8 +118,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLineEdit" name="maxIterations">
     <property name="geometry">
      <rect>
-      <x>930</x>
-      <y>251</y>
+      <x>1190</x>
+      <y>261</y>
       <width>100</width>
       <height>27</height>
      </rect>
@@ -134,8 +134,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>930</x>
-      <y>291</y>
+      <x>1190</x>
+      <y>301</y>
       <width>100</width>
       <height>17</height>
      </rect>
@@ -150,8 +150,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QTextBrowser" name="statusBox">
     <property name="geometry">
      <rect>
-      <x>930</x>
-      <y>310</y>
+      <x>1190</x>
+      <y>320</y>
       <width>100</width>
       <height>81</height>
      </rect>
