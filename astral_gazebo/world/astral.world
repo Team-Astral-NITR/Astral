@@ -83,14 +83,44 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <model name='astral_bot'>
-      <static>1</static>
-      <link name='astral_bot'>
-        <visual name='astral_bot'>
+      <link name='body_whole'>
+        <pose frame=''>0 0 0.0413 0 -0 0</pose>
+        <inertial>
+          <mass>1</mass>
           <pose frame=''>0 0 0 0 -0 0</pose>
-          <cast_shadows>0</cast_shadows>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name='body_whole_collision'>
           <geometry>
             <mesh>
-              <uri>model://astral/meshes/flipkart_final.dae</uri>
+              <uri>model://astral_bot/meshes/body_whole.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='body_whole_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://astral_bot/meshes/body_whole.dae</uri>
             </mesh>
           </geometry>
         </visual>
@@ -98,18 +128,296 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <pose frame=''>-0.376715 0.775975 0 0 -0 0</pose>
+      <link name='motor_wheel_1'>
+        <pose frame=''>0 0 0.0413 0 -0 0</pose>
+        <inertial>
+          <mass>1</mass>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name='motor_wheel_1_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://astral_bot/meshes/motor_wheel_1.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='motor_wheel_1_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://astral_bot/meshes/motor_wheel_1.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='motor_wheel_2'>
+        <pose frame=''>0 0 0.0413 0 -0 0</pose>
+        <inertial>
+          <mass>1</mass>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name='motor_wheel_2_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://astral_bot/meshes/motor_wheel_2.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='motor_wheel_2_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://astral_bot/meshes/motor_wheel_2.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='motor_wheel_3'>
+        <pose frame=''>0 0 0.0413 0 -0 0</pose>
+        <inertial>
+          <mass>1</mass>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name='motor_wheel_3_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://astral_bot/meshes/motor_wheel_3.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='motor_wheel_3_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://astral_bot/meshes/motor_wheel_3.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='motor_wheel_4'>
+        <pose frame=''>0 0 0.0413 0 -0 0</pose>
+        <inertial>
+          <mass>1</mass>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name='motor_wheel_4_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://astral_bot/meshes/motor_wheel_4.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='motor_wheel_4_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://astral_bot/meshes/motor_wheel_4.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='arm'>
+        <pose frame=''>0 1.1 0.75 -1.41593 -0 0</pose>
+        <inertial>
+          <mass>1</mass>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name='arm_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://astral_bot/meshes/arm.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='arm_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://astral_bot/meshes/arm.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+      </link>
+      <pose frame=''>-0.377769 -0.441299 0 0 -0 0</pose>
+    </model>
+    <model name='astral_arena'>
+      <static>1</static>
+      <link name='astral_arena'>
+        <visual name='astral'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>model://astral/meshes/astral_arena_final.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>-1.44301 -1.16657 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>29 924000000</sim_time>
-      <real_time>30 137845085</real_time>
-      <wall_time>1597043092 184621598</wall_time>
-      <iterations>29924</iterations>
-      <model name='astral_bot'>
-        <pose frame=''>-0.376715 0.775975 0 0 -0 0</pose>
+      <sim_time>100 628000000</sim_time>
+      <real_time>101 285361848</real_time>
+      <wall_time>1597066741 120710954</wall_time>
+      <iterations>100628</iterations>
+      <model name='astral_arena'>
+        <pose frame=''>-1.44301 -1.16657 0 0 -0 0</pose>
         <scale>1 1 1</scale>
-        <link name='astral_bot'>
-          <pose frame=''>-0.376715 0.775975 0 0 -0 0</pose>
+        <link name='astral_arena'>
+          <pose frame=''>-1.44301 -1.16657 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='astral_bot'>
+        <pose frame=''>-0.377769 -0.441299 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='arm'>
+          <pose frame=''>-0.377769 0.658701 0.75 -1.41593 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='body_whole'>
+          <pose frame=''>-0.377769 -0.441299 0.0413 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='motor_wheel_1'>
+          <pose frame=''>-0.377769 -0.441299 0.0413 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='motor_wheel_2'>
+          <pose frame=''>-0.377769 -0.441299 0.0413 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='motor_wheel_3'>
+          <pose frame=''>-0.377769 -0.441299 0.0413 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='motor_wheel_4'>
+          <pose frame=''>-0.377769 -0.441299 0.0413 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -131,7 +439,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>11.2157 -13.1996 4.87136 0 0.275643 2.35619</pose>
+        <pose frame=''>7.28796 -9.18323 4.78539 0 0.275643 2.35619</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
