@@ -21,8 +21,8 @@ $ unzip models.zip -d ~/.gazebo/models/
 
 ### View of arena
 
-![Head view][https://github.com/Team-Astral-NITR/Astral/tree/master/astral_gazebo/utils/head_view.png]
-![Side view][https://github.com/Team-Astral-NITR/Astral/tree/master/astral_gazebo/utils/side_view.png]
+![Head view](https://github.com/Team-Astral-NITR/Astral/tree/master/astral_gazebo/utils/head_view.png)
+![Side view](https://github.com/Team-Astral-NITR/Astral/tree/master/astral_gazebo/utils/side_view.png)
 
 ### Todos
 
