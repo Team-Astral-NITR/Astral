@@ -90,7 +90,7 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <mesh>
-              <uri>model://astral/meshes/astral.dae</uri>
+              <uri>model://astral/meshes/flipkart_final.dae</uri>
             </mesh>
           </geometry>
         </visual>
@@ -98,46 +98,18 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <pose frame=''>-2.0752 6.17272 0 0 -0 0</pose>
-    </model>
-    <model name='astral_arena'>
-      <static>1</static>
-      <link name='astral_arena'>
-        <visual name='astral_arena'>
-          <pose frame=''>0 0 0 0 -0 0</pose>
-          <cast_shadows>0</cast_shadows>
-          <geometry>
-            <mesh>
-              <uri>model://astral/meshes/arena_flipkart_grid.dae</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>1</kinematic>
-      </link>
-      <pose frame=''>4.15307 -26.3573 0 0 -0 0</pose>
+      <pose frame=''>-0.376715 0.775975 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>342 100000000</sim_time>
-      <real_time>344 4809818</real_time>
-      <wall_time>1596712689 565000586</wall_time>
-      <iterations>342100</iterations>
-      <model name='astral_arena'>
-        <pose frame=''>4.15307 -26.3573 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='astral_arena'>
-          <pose frame=''>4.15307 -26.3573 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
+      <sim_time>29 924000000</sim_time>
+      <real_time>30 137845085</real_time>
+      <wall_time>1597043092 184621598</wall_time>
+      <iterations>29924</iterations>
       <model name='astral_bot'>
-        <pose frame=''>0 0 0.75 0 -0 0</pose>
+        <pose frame=''>-0.376715 0.775975 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='astral_bot'>
-          <pose frame=''>0 0 0.75 0 -0 0</pose>
+          <pose frame=''>-0.376715 0.775975 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -159,7 +131,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>4.3799 -6.18166 1.94811 0 0.486907 -1.50661</pose>
+        <pose frame=''>11.2157 -13.1996 4.87136 0 0.275643 2.35619</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
